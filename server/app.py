@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask
 from .logic import get_last_names_logic
 from .dao import get_connection
 
