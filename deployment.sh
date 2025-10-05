@@ -7,4 +7,4 @@ python3 -m venv venv
 . venv/bin/activate
 pip install -r server/requirements.txt
 pip install gunicorn
-nohup gunicorn -w 2 -b 0.0.0.0 'server.app:app' > gn.log &
+gunicorn -w 2 -b 0.0.0.0 'server.app:app'
